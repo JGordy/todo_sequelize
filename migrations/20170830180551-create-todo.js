@@ -12,7 +12,9 @@ module.exports = {
         type: Sequelize.STRING
       },
       completed: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        default: false
       },
       completedAt: {
         type: Sequelize.DATE

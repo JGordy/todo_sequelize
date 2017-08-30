@@ -1,0 +1,17 @@
+.notDone {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.notDone a {
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.notDone label {
+  text-decoration: underline;
+}
+
+.done label{
+  text-decoration: none;
+}

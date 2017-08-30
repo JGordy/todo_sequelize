@@ -1,0 +1,25 @@
+<h3>To do</h3>
+{{#todos}}
+{{#completed}}
+{{/completed}}
+{{^completed}}
+<div class="notDone">
+  <form id="{{id}}" action="/complete/{{id}}" method="post">
+    <button type="submit" name="task" value="{{task}}">Mark complete</button>
+    <label for="">{{item}}</label>
+  </form>
+  <a href="/edit/{{id}}">Edit</a>
+  <a href="/remove/{{id}}">Remove</a>
+</div>
+{{/completed}}
+{{/todos}}
+<h3>Completed todos</h3>
+{{#todos}}
+{{#completed}}
+<div class="Done">
+  <del><label>{{item}}</label></del>
+</div>
+{{/completed}}
+{{^completed}}
+{{/completed}}
+{{/todos}}
