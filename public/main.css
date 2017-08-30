@@ -8,9 +8,30 @@ body {
   /*background-color: lightcyan;*/
   background-color: linear-gradient(lightcyan, lightskyblue)
 }
+
+#title {
+text-align: center;
+margin-bottom: 20px;
+margin-top: 20px;
+text-shadow: 3px 3px 3px springgreen;
+}
+
 .create_todo {
   display: flex;
   justify-content: center;
+}
+
+.create_todo input {
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 4px solid springgreen;
+}
+
+.create_todo button {
+  background-color: springgreen;
+  color: black;
+  text-shadow: 2px 2px 2px cadetblue;
 }
 
 .container {
@@ -90,7 +111,7 @@ del {
 }
 
 .notDone_header {
-  margin-top: 25px;
+
   margin-bottom: 20px;
   font-size: 36px;
   text-align: center;
