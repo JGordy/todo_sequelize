@@ -1,26 +1,26 @@
 <div class="the_list">
-  <h3>To do</h3>
+  <h3 class="notDone_header">To do</h3>
   {{#todos}}
   {{#completed}}
   {{/completed}}
   {{^completed}}
   <div class="notDone">
     <form id="{{id}}" action="/complete/{{id}}" method="post">
-      <button type="submit" name="task" value="{{task}}">√</button>
+      <button class="check" type="submit" name="task" value="{{task}}">√</button>
     </form>
     <form action="/edit/{{id}}" method="post">
       <input class="item" type="text" name="item" value="{{item}}">
-      <button type="submit" name="submit">Edit</button>
+      <button class="edit" type="submit" name="submit">Edit</button>
     </form>
-    <a href="/remove/{{id}}">Remove</a>
+    <a class="remove" href="/remove/{{id}}">Remove</a>
   </div>
   {{/completed}}
   {{/todos}}
-  <h3>Completed todos</h3>
+  <h3 class="done_header">Completed todos</h3>
   {{#todos}}
   {{#completed}}
-  <div class="Done">
-    <del><label>{{item}}</label></del>
+  <div class="done">
+    <del><label class="completed">{{item}}</label></del>
   </div>
   {{/completed}}
   {{^completed}}

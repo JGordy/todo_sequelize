@@ -16,7 +16,6 @@ router.get("/", function(req, res) {
 router.post("/create", function(req, res) {
   let todo = models.Todo.create({
     item: req.body.item,
-    completed: false
   })
     .then(function(data) {
       res.redirect("/");
