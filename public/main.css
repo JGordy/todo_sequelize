@@ -1,3 +1,37 @@
+.create_todo {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.the_list {
+margin-top: 50px;
+}
+
+.item {
+  border: none;
+  border-bottom: 2px solid deepskyblue;
+  font-size: 18px;
+  background-color: aliceblue;
+}
+
+button {
+  background-color: deepskyblue;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+}
+
+del {
+  color: indianred;
+}
+
 .notDone {
   display: flex;
   margin-bottom: 10px;
@@ -6,6 +40,10 @@
 .notDone a {
   text-decoration: none;
   margin-left: 3px;
+  padding: 1px;
+  background-color: indianred;
+  color: white;
+  border-radius: 3px;
 }
 
 .notDone label {
